@@ -24,7 +24,7 @@ SELECT * FROM countrylanguage WHERE countrycode = 'VAT';
 --  nearby country speaks nothing but that language.
 
 SELECT * FROM countrylanguage WHERE language = 'Italian' AND percentage = 100;
-SELECT * FROM country WHERE code = 'SMR';
+SELECT name FROM country WHERE code = 'SMR';
 
 # Answer = San Marino
 
@@ -43,8 +43,7 @@ SELECT * FROM city WHERE countrycode = 'SMR';
 -- headed to, but doesn't end the same. Find out the city, and do another search for what country it's in. Hurry!
 
 SELECT * FROM city WHERE name LIKE 'Serra%';
-
-
+SELECT * FROM country WHERE code = 'BRA'
 
 # Answer = Serra, BRA
 
@@ -81,4 +80,4 @@ SELECT name, population FROM city WHERE population = 91084;
 
 
 
--- She's in Santa Monica!
+-- She's in Santa Monica, USA!
